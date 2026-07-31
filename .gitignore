@@ -1,0 +1,67 @@
+.idea
+**__pycache__**
+**.DS_Store**
+output/
+engine/
+Python-3.8.10/
+stereo/modeling/models/nmrf/*
+data/
+/dbstereo/
+*.sh
+kitti12/
+engine/
+
+# ===== Deployment / BPU / TRT / ONNX (not PyTorch source) =====
+# Deployment toolchain & scripts
+deploy/
+j6_deploy/
+j6_deploy.tar.gz
+remote_bpu/
+tools/export_trt.py
+run_pt.py
+run_onnx.py
+run_onnx_batch.py
+bench_j6.py
+gen_calib_data.py
+
+# Horizon BPU compile / analysis artifacts
+.hb_analyzer/
+.hb_compile/
+.hb_model_info/
+.check/
+hb_compile*/
+hb_analyzer_report.html
+hb_compile.log
+
+# Calibration configs & data (deployment quantization)
+*_calib*.yaml
+calib_data*/
+
+# TRT / ONNX engines & models
+trt_engines/
+*.onnx
+*.engine
+*.hbm
+*.bc
+
+# Model weights / checkpoints (large binaries, distribute via releases)
+ckeckpoint/
+checkpoint_epoch_89_m.pth
+*.pth
+
+# Deployment metadata artifacts
+manifest.json
+model-codegen-info.json
+model-split-info.json
+repositories
+46a5f5cefa5b64ddca4ad9eb6385ea67458de73c0006663f293b4691087e64b7.json
+
+# Scratch outputs / data dumps / archives
+*.npy
+*.png
+*.tar
+*.tar.gz
+
+# Deployment docs (keep only PT-related docs)
+docs/j6_bpu_deployment.md
+docs/float_to_hbm_pipeline.md
