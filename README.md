@@ -5,7 +5,6 @@
 
 </sup> Carizon
 
-Arxiv 2025
 
 
 <!-- <a href="https://arxiv.org/abs/2509.02415"><img src='https://img.shields.io/badge/arXiv-DBStereo-red' alt='Paper PDF'></a>   -->
